@@ -9,11 +9,6 @@ beforeAll(() => {
     // Disallow any bypass requests from unit tests
     onUnhandledRequest: 'error'
   })
-
-  // Some `createPortal` calls expect this element to exist and use it as their container
-  const root = document.createElement('div')
-  root.setAttribute('id', 'root')
-  document.body.appendChild(root)
 })
 
 afterEach(() => {
